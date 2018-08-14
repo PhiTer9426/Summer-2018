@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>task2</title>
+		<link href="index.css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<div id="app">
+			<input 
+			type="text" 
+			v-model="msg" 
+			v-on:keyup.enter="add">
+				<ul>
+					<li 
+					v-bind:class="{done: item.isOK}" 
+					v-for="(item,index) in things" 
+					v-on:click="done(index)" 
+					v-text="item.text">
+					</li>
+				</ul>
+			</input>
+		</div>
+	</body>
+	<script src="node_modules/vue/dist/vue.js"></script>
+	<script src="index.js"></script>
+</html>
