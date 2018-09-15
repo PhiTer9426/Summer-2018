@@ -6,19 +6,24 @@
 	</head>
 	<body>
 		<div id="app">
-			<input 
-			type="text" 
-			v-model="msg" 
-			v-on:keyup.enter="add">
+			<div class="flex-container">
+				<h1>事件清单</h1>
+				<input 
+				type="text" 
+				class="input-box"
+				v-model="msg" 
+				v-on:keyup.enter="add">
 				<ul>
 					<li 
-					v-bind:class="{done: item.isOK}" 
+					v-bind:class="{done: item.isOK, 'list-hover': item.isHover}" 
 					v-for="(item,index) in things" 
-					v-on:click="done(index)" 
+					@click="done(index)" 
+					@mouseover="toggleShow(index)" 
+					@mouseout="toggleShow(index)" 
 					v-text="item.text">
 					</li>
 				</ul>
-			</input>
+			</div>
 		</div>
 	</body>
 	<script src="node_modules/vue/dist/vue.js"></script>

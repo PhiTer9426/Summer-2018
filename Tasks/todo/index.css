@@ -1,0 +1,19 @@
+.done{
+	color: #aaa;
+	text-decoration: line-through;
+}
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+	justify-content: center;
+}
+.list-hover{
+    color: #ff6700;
+}
+.input-box{
+	line-height: 30px;
+}

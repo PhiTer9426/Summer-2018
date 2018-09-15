@@ -115,7 +115,6 @@ ol, ul {
     font-size: 14px;
     line-height: 48px;
     outline: 0;
-    -webkit-transition: all .2s;
     transition: all .2s;
 }
 .header .search-form {
@@ -136,7 +135,6 @@ ol, ul {
     background: #fff;
     color: #616161;
     outline: 0;
-    -webkit-transition: all .2s;
     transition: all .2s;
 }
 .header .search-hot-words {
@@ -153,7 +151,6 @@ ol, ul {
     font-size: 12px;
     background: #eee;
     color: #757575;
-    -webkit-transition: all .2s;
     transition: all .2s;
 }
 .hide {
@@ -218,15 +215,8 @@ ol, ul {
     width: 1226px;
 }
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
 
 @keyframes fade {
@@ -313,7 +303,6 @@ ol, ul {
     border-radius: 5px;
     margin-left: 14px;
     overflow: hidden;
-    -webkit-transition: -webkit-box-shadow .2s linear;
     transition: box-shadow .2s linear;
 }
 .home-promo img {
@@ -329,7 +318,6 @@ ol, ul {
     _zoom: 1;
     color: #fff;
     color: rgba(255, 255, 255, 0.7);
-    -webkit-transition: color .2s;
     transition: color .2s;
 }
 /*clear float*/
